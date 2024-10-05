@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jvav - 新编程语言</title>
+    <style>
+        /* 页面通用样式 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* 导航栏样式 */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 50px;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 10;
+        }
+
+        .navbar a {
+            margin-left: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: black; /* 黑色背景 */
+            padding: 10px 15px; /* 添加内边距 */
+            border-radius: 5px; /* 圆角 */
+            transition: background-color 0.3s; /* 添加过渡效果 */
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 215, 0, 0.8); /* 悬停颜色 */
+        }
+
+        /* 每个部分的样式 */
+        section {
+            height: 100vh; /* 每个部分占满整个屏幕 */
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center; /* 默认文本居中 */
+        }
+
+        /* 第一部分的样式 */
+        .hero-section {
+            background-image: url('https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_crop,w_960,h_720,ar_4:3,f_auto,q_auto/unsplashcom/photo-1572621403925-33e05716ad8d');
+            background-size: cover;
+            background-position: center;
+            text-align: left; /* 第一部分的文本左对齐 */
+        }
+
+        /* 第二部分背景图 */
+        .second-section {
+            background-image: url('https://images.unsplash.com/photo-1508881238244-726ec6f31474');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* 第三部分背景图 */
+        .third-section {
+            background-image: url('https://images.unsplash.com/photo-1503945438517-f65904a52ce6');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section-content {
+            background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+            padding: 20px; /* 调整内边距 */
+            border-radius: 10px;
+            display: flex; /* 使用Flexbox布局 */
+            width: 80%; /* 宽度 */
+            margin: 0 auto; /* 使内容居中 */
+        }
+
+        .hero-content {
+            width: 30%; /* 调整第一部分内容的宽度为30% */
+            margin: 0 auto; /* 确保居中 */
+        }
+
+        .section-content img {
+            width: 50%; /* 图片占据屏幕一半 */
+            height: auto; /* 确保图片保持比例 */
+            border-radius: 10px 0 0 10px; /* 仅左侧有圆角 */
+        }
+
+        .section-text {
+            width: 50%; /* 文本占据屏幕一半 */
+            display: flex;
+            flex-direction: column; /* 垂直排列 */
+            justify-content: center; /* 垂直居中 */
+            padding: 20px; /* 内边距 */
+            text-align: left; /* 左对齐 */
+        }
+
+        .section-content h2 {
+            font-size: 28px; /* 标题字体大小 */
+            margin-bottom: 10px; /* 标题底部间距 */
+        }
+
+        .section-content p {
+            font-size: 16px; /* 文字字体大小 */
+            margin-bottom: 10px; /* 文字底部间距 */
+        }
+
+        /* 按钮样式 */
+        .hero-content a {
+            display: inline-block; /* 使链接看起来像按钮 */
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px; /* 调整内边距 */
+            font-size: 16px; /* 调整字体大小 */
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none; /* 去掉下划线 */
+        }
+
+        .hero-content a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <a href="#">首页</a>
+        <a href="#">关于我们</a>
+        <a href="#">产品</a>
+        <a href="#">博客</a>
+        <a href="#">联系</a>
+    </div>
+
+    <!-- 第一部分 -->
+    <section class="hero-section">
+        <div class="section-content hero-content">
+            <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/17986047/147065_843133.png" alt="Jvav Logo" style="width: 100px;"> <!-- Logo设置宽度 -->
+            <div>
+                <h1>Jvav - 新编程语言</h1>
+                <p>更简便，更具兼容性</p>
+                <a href="https://mdownload.mini1.cn/latest/miniworldoffice.exe" download>立即下载</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第二部分：简便易用，兼容性强 -->
+    <section class="second-section">
+        <div class="section-content">
+            <img src="https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_clip,w_960,h_720,f_auto,q_auto/unsplashcom/photo-1639507986194-48ef61205b61" alt="简便易用">
+            <div class="section-text">
+                <h2>简便易用，兼容性强</h2>
+                <p>开发效率提高，无缝迁移</p>
+                <p>简洁易学，简单易懂的语法，降低学习难度。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第三部分：兼容性强 -->
+    <section class="third-section">
+        <div class="section-content">
+            <img src="https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_clip,w_960,h_720,f_auto,q_auto/unsplashcom/photo-1656863678565-b7576b9363bb" alt="兼容性强">
+            <div class="section-text">
+                <h2>兼容性强</h2>
+                <p>支持多种操作系统和平台，拥有完全复制游戏代码的功能和全平台代码类型，包括但不限于Python，Java，C++。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第四部分：高效编程 -->
+    <section class="hero-section">
+        <div class="section-content">
+            <img src="https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_crop,w_960,h_720,ar_4:3,f_auto,q_auto/unsplashcom/photo-1588690154757-badf4644190f" alt="高效编程" style="width: 50%; border-radius: 10px 0 0 10px;"> <!-- 图片占左侧 -->
+            <div class="section-text">
+                <h2>高效编程</h2>
+                <p>提高开发效率，节约时间成本</p>
+            </div>
+        </div>
+    </section>
+<!-- 导航栏 -->
+<div class="navbar">
+    <a href="index.html">首页</a>
+    <a href="关于我们.html">关于我们</a> <!-- 更新这里 -->
+    <a href="products.html">产品</a>
+    <a href="blog.html">博客</a>
+    <a href="contact.html">联系</a>
+</div>
+<!-- 页脚 -->
+<footer style="text-align: center; padding: 20px; background-color: rgba(0, 0, 0, 0.7);">
+    <p style="color: white; font-size: 18px;">@2024 由一只白色的锂喵制作</p>
+</footer>
+
+</body>
+</html>
