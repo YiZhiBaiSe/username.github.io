@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - Jvav</title>
+    <style>
+        /* 页面通用样式 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        /* 导航栏样式 */
+        .navbar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            z-index: 10;
+        }
+
+        .navbar button {
+            margin-left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .navbar button:hover {
+            background-color: rgba(255, 215, 0, 0.8); /* 悬停颜色 */
+        }
+
+        /* Logo 样式 */
+        .logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 60px; /* 设置 logo 的宽度 */
+            height: auto; /* 自适应高度 */
+            z-index: 10; /* 确保 logo 在其他元素上方 */
+        }
+
+        /* 第一部分的样式 */
+        .hero-section {
+            position: relative;
+            height: 100vh; /* 全屏 */
+            background-image: url('https://steamuserimages-a.akamaihd.net/ugc/787501577671510013/A736A41B25D5B0474275C453E7A50D64B594E7CD/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false'); /* 背景图片链接 */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* 居中 */
+            text-align: center;
+            color: white;
+            z-index: 2; /* 确保文字在背景上方 */
+        }
+
+        /* 第二部分样式 */
+        section {
+            display: flex;
+            align-items: center; /* 垂直居中 */
+            height: 100vh; /* 每个部分占满整个屏幕 */
+            margin: 0; /* 去掉外边距 */
+            position: relative; /* 用于定位模糊背景 */
+            background-color: black; /* 添加黑色背景 */
+        }
+
+        /* 半透明模糊背景 */
+        .blurred-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+            backdrop-filter: blur(10px); /* 模糊效果 */
+            z-index: 1; /* 背景在最下层 */
+        }
+
+        .section-content {
+            width: 80%; /* 控制内容宽度 */
+            margin: 0 auto; /* 使内容居中 */
+            position: relative; /* 相对定位以覆盖模糊背景 */
+            z-index: 2; /* 确保内容在模糊背景上方 */
+            text-align: center; /* 中心对齐标题 */
+        }
+
+        .section-content img {
+            width: 50%; /* 图片占据屏幕一半 */
+            height: auto; /* 确保图片保持比例 */
+            border-radius: 10px; /* 圆角 */
+        }
+
+        .section-text {
+            width: 50%; /* 文本占据屏幕一半 */
+            padding: 20px; /* 内边距 */
+            text-align: left; /* 左对齐 */
+            position: relative; /* 相对定位 */
+            z-index: 2; /* 确保文本在模糊背景上方 */
+        }
+
+        .section-text h2 {
+            font-size: 28px; /* 标题字体大小 */
+            margin-bottom: 10px; /* 标题底部间距 */
+        }
+
+        .section-text p {
+            font-size: 16px; /* 文字字体大小 */
+            margin-bottom: 10px; /* 文字底部间距 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <img class="logo" src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/17986047/2024-10-04-a8fda87e-upload-logo.png" alt="Logo">
+
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <button>首页</button>
+        <button>关于我们</button>
+        <button>产品</button>
+        <button>博客</button>
+    </div>
+
+    <!-- 第一部分 -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Jvav - 开启编程新纪元</h1>
+            <p>简便、兼容、高效的编程语言</p>
+        </div>
+    </section>
+
+    <!-- 第二部分：我们的特色项目 -->
+    <section>
+        <div class="blurred-background"></div> <!-- 半透明模糊背景 -->
+        <div class="section-content">
+            <h2>我们的特色项目：创新编程语言的未来</h2>
+        </div>
+    </section>
+
+    <!-- 简单易学 -->
+    <section>
+        <div class="blurred-background"></div> <!-- 半透明模糊背景 -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrehp2oqjGBLaqIf0U0f30ZH0HQlZRhpDd8wU-YmQteh7ytZyRvjhkSZzgZDTSLg_KhnI&usqp=CAU" alt="简单易学"> <!-- 图片链接 -->
+        <div class="section-text">
+            <h2>简单易学</h2>
+            <p>jvav语言让编程变得简单易学，让每个人都能成为编程高手。</p>
+        </div>
+    </section>
+
+    <!-- 高度兼容 -->
+    <section>
+        <div class="blurred-background"></div> <!-- 半透明模糊背景 -->
+        <img src="file:///C:/Users/Administrator/Desktop/%E6%8D%95%E8%8E%B7.PNG" alt="高度兼容"> <!-- 图片链接 -->
+        <div class="section-text">
+            <h2>高度兼容</h2>
+            <p>jvav语言与Java语言高度兼容，让您的编程工作更加顺畅。</p>
+        </div>
+    </section>
+
+    <!-- 高效实用 -->
+    <section>
+        <div class="blurred-background"></div> <!-- 半透明模糊背景 -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZCNXE4zKcUagPwlmYt57VZu5H18fST7zGGMw_otVqLZB2gyiVKHZMt3pU4osZqEFTtyo&usqp=CAU" alt="高效实用"> <!-- 图片链接 -->
+        <div class="section-text">
+            <h2>高效实用</h2>
+            <p>jvav语言让您的编程工作更加高效实用，节省更多时间和精力。</p>
+        </div>
+    </section>
+    <div class="navbar">
+        <a href="index.html"><button>首页</button></a>
+        <a href=".html"><button>关于我们</button></a> <!-- 添加关于我们的链接 -->
+        <a href="products.html"><button>产品</button></a>
+        <a href="blog.html"><button>博客</button></a>
+    </div>
+    <!-- 页脚 -->
+<footer style="text-align: center; padding: 20px; background-color: rgba(0, 0, 0, 0.7);">
+    <p style="color: white; font-size: 18px;">@2024 由一只白色的锂喵制作</p>
+</footer>
+
+</body>
+</html>

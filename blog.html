@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: black; /* 背景黑色 */
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 毛玻璃半透明窗口 */
+        .glass {
+            background: rgba(255, 255, 255, 0.1); /* 半透明白色 */
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* 添加阴影 */
+            backdrop-filter: blur(10px); /* 毛玻璃效果 */
+            text-align: center;
+        }
+
+        /* 文本样式 */
+        .glass h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        /* 按钮样式 */
+        .button {
+            padding: 15px 30px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* 功能区样式 */
+        .navbar {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+        }
+
+        .navbar a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <!-- 功能按钮区 -->
+    <div class="navbar">
+        <a href="index.html">首页</a>
+        <a href="关于我们.html">关于我们</a>
+        <a href="products.html">产品</a>
+        <a href="#">博客</a>
+    </div>
+
+    <!-- 毛玻璃窗口内容 -->
+    <div class="glass">
+        <h1>由B站UP主一只白色的锂喵制作</h1>
+        <button class="button" onclick="window.location.href='https://space.bilibili.com/1073605406?spm_id_from=333.337.search-card.all.click'">
+            去一键三连
+        </button>
+    </div>
+</body>
+</html>
